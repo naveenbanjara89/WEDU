@@ -1,0 +1,47 @@
+{/* Left Side */}
+        <div className="relative min-h-screen overflow-visible bg-white ">
+
+        {/* IMAGE (OVERFLOWING) */}
+          <div className="absolute top-[50px] right-[-500px] pointer-events-none ">
+            <img
+              src={people}
+              alt="people"
+              className="w-[650px] h-auto max-w-none"
+            />
+          </div>
+
+        {/* TEXT CONTENT */}
+          <div className="container relative z-10 mt-40 flex flex-col text-start mx-auto py-4 px-6 md:px-20 lg:px-32 text-black">
+            <h1 className="text-5xl leading-tight">
+              Communicate.<br />
+              Collaborate.Create.
+            </h1>
+
+            <p className="mt-7">
+              WeDu provides an effective and powerful <br />
+              way to manage your projects
+            </p>
+
+            <button className="bg-black mt-7 w-[140px] hover:bg-yellow-400 hover:text-black hover:scale-105 transition text-white rounded font-bold px-4 py-2">
+              Get Started
+            </button>
+
+            {/* ICONS */}
+            <div className="flex mt-20 items-center gap-8">
+              <div className="flex items-center gap-3">
+                <img src={security} alt="" className="w-8 h-8" />
+                <span className="text-xs">Speed &<br />Security</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <img src={scale} alt="" className="w-8 h-8" />
+                <span className="text-xs">Flexibility &<br />Scalability</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <img src={collab} alt="" className="w-8 h-8" />
+                <span className="text-xs">Better<br />Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </div>
