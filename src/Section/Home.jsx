@@ -4,12 +4,14 @@ import security from '../assets/Security.png'
 import scale from '../assets/scale.png'
 import collab from '../assets/collab.png'
 import CurvedSection from '../Components/CurvedSection'
+import MessageIcon from '../Components/MessageIcon'
 
 const Home = () => {
   return (
     <>
       <section className='min-h-screen mb-4 bg-cover bg-center flex  items-center w-full overflow-hidden'>
       <NavBar/>
+      <MessageIcon/>
       <div className="relative min-h-screen overflow-visible bg-white ">
         <div className="absolute top-[50px] right-[-500px] pointer-events-none ">
           <img src={people} alt="people" className="w-[650px] h-auto max-w-none" />
